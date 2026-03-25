@@ -20,6 +20,121 @@ This edition preserves the original "full examples" style from each module while
 
 ## Project tree
 ```
+Solitude_of_fire/
+├── arit_eval
+│   ├── audit_log
+│   │   ├── audit_heap.txt
+│   │   └── log_cppcheck.txt
+│   ├── bin
+│   │   └── arit_eval
+│   ├── LICENSE
+│   ├── Makefile
+│   └── src
+│       ├── arithmetic_eval.c
+│       ├── arithmetic_eval.h
+│       ├── AST.c
+│       ├── AST.h
+│       ├── global.h
+│       ├── main.c
+│       ├── parser.c
+│       ├── parser.h
+│       ├── secure_operation.c
+│       └── secure_operation.h
+├── docs
+│   ├── arit_eval_page.dox
+│   ├── fire_dll_page.dox
+│   ├── fire_graph_page.dox
+│   ├── fire_queue_page.dox
+│   ├── fire_stack_page.dox
+│   ├── fire_tree_page.dox
+│   ├── fire_vector_page.dox
+│   ├── html
+│   └── mainpage.dox...
+├── Doxyfile
+├── fire_doubly_linked_list
+│   ├── audit_log
+│   │   ├── audit_heap.txt
+│   │   └── log_cppcheck.txt
+│   ├── bin
+│   │   └── test_doubly_linked
+│   ├── lib
+│   │   ├── fire_doubly_linked.c
+│   │   └── fire_doubly_linked.h
+│   ├── LICENSE
+│   ├── Makefile
+│   └── src
+│       └── main.c
+├── fire_graph
+│   ├── bin
+│   │   └── test_graph
+│   ├── lib
+│   │   ├── fire_graph.c
+│   │   └── fire_graph.h
+│   ├── log_audit
+│   │   ├── log_cppcheck.txt
+│   │   └── log_valgrind.txt
+│   ├── Makefile
+│   └── src
+│       └── main.c
+├── fire_narytree
+│   ├── audit_log
+│   │   ├── audit_heap.txt
+│   │   └── log_cppcheck.txt
+│   ├── bin
+│   │   └── test_tree
+│   ├── lib
+│   │   ├── fire_narytree.c
+│   │   └── fire_narytree.h
+│   ├── LICENSE
+│   ├── Makefile
+│   └── src
+│       └── main.c
+├── fire_queue
+│   ├── audit_log
+│   │   ├── audit_heap.txt
+│   │   └── log_cppcheck.txt
+│   ├── bin
+│   │   └── test_queue
+│   ├── lib
+│   │   ├── fire_queue.c
+│   │   └── fire_queue.h
+│   ├── LICENSE
+│   ├── Makefile
+│   └── src
+│       └── main.c
+├── fire_stack
+│   ├── audit_log
+│   │   ├── audit_heap.txt
+│   │   └── log_cppcheck.txt
+│   ├── bin
+│   │   └── test_stack
+│   ├── lib
+│   │   ├── fire_stack.c
+│   │   └── fire_stack.h
+│   ├── LICENSE
+│   ├── Makefile
+│   └── src
+│       └── main.c
+├── fire_vector
+│   ├── audit_log
+│   │   ├── audit_heap.txt
+│   │   └── log_cppcheck.txt
+│   ├── bin_test
+│   │   └── fire_vector_test
+│   ├── lib
+│   │   ├── fire_vector.c
+│   │   ├── fire_vector.h
+│   │   ├── mem_ops.c
+│   │   └── mem_ops.h
+│   ├── LICENSE
+│   ├── Makefile
+│   └── src_test
+│       └── main.c
+├── LICENSE
+└── README.md
+
+38 directories, 321 files
+
 ```
 
 ## Generate Documentation
