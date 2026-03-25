@@ -1,3 +1,6 @@
+![C](https://img.shields.io/badge/language-C-blue)
+![Build](https://img.shields.io/badge/build-manual-lightgrey)
+![License](https://img.shields.io/badge/license-MIT-green)
 # 🔥 Fortress of Solitude — Fire Edition
 
 Low-level C implementations of classic data structures and algorithms, written for study, experimentation and long-term technical reference.
