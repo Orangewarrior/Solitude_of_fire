@@ -164,12 +164,6 @@ This **is**:
 
 ---
 
-## 🧑‍💻 Author
-
-**Orangewarrior**
-
----
-
 ## 🧠 Future Work
 
 - Dijkstra implementation
@@ -323,6 +317,6 @@ cppcheck \
   . 2 > log_cppcheck.txt
 ```
 
-## Author
+## 🧑‍💻 Author
 
-Orangewarrior
+**Orangewarrior**
