@@ -1,24 +1,182 @@
-# Fortress of Solitude - Fire Edition
+# 🔥 Fortress of Solitude — Fire Edition
 
-A security-focused and documented refactor of the original low-level C modules.
+Low-level C implementations of classic data structures and algorithms, written for study, experimentation and long-term technical reference.
 
-This edition preserves the original "full examples" style from each module while:
+> ⚠️ This project is intentionally **low-level and explicit**, focusing on memory, pointers, and internal behavior — not abstraction or frameworks.
 
-- improving API safety
-- documenting public and internal code with Doxygen
-- adding module pages and usage examples
+---
 
-## Modules
+## 🧠 About
 
-- `fire_queue`
-- `fire_stack`
-- `fire_doubly_linked_list`
-- `fire_narytree`
-- `fire_vector`
-- `arit_eval`
+This repository is a collection of **hand-crafted data structures and algorithms in C**, originally built for learning and later refactored with:
+
+- safer memory handling
+- better modularization
+- Doxygen documentation
+- improved portability (Linux / BSD)
+
+It represents foundational work in:
+
+- Pointers and memory management
+- Manual data structure implementation
+- Algorithmic thinking
+- Low-level debugging mindset
+
+---
+
+## 📦 Modules
+
+### 🧱 Data Structures
+
+- `fire_queue` → FIFO queue
+- `fire_stack` → LIFO stack
+- `fire_doubly_linked_list` → bidirectional list with positional access
+- `fire_vector` → dynamic array
+- `fire_narytree` → tree using child/sibling representation
+
+---
+
+### 🧮 Algorithms
+
+- `arit_eval` → arithmetic expression parser + evaluator (with overflow-safe operations)
+
+---
+
+### 🌐 Graph Algorithms
+
 - `fire_graph`
+  - weighted directed graph
+  - dynamic adjacency structure
+  - Bellman-Ford (shortest path)
+  - Floyd-Warshall (all-pairs shortest path)
+  - negative cycle detection
+  - path reconstruction
+
+---
+
+## 📊 Example — Shortest Path (Bellman-Ford)
+
+```text
+Graph edges:
+A -> B (6)
+A -> C (2)
+C -> D (3)
+D -> B (-2)
+B -> E (1)
+E -> H (2)
+H -> I (1)
+I -> J (-2)
+
+Shortest route from A to J:
+A -> C -> D -> B -> E -> H -> I -> J
+
+Total cost: 5
+```
+
+---
+
+## ⚙️ Build
+
+Each module is independent:
+
+```bash
+make -C fire_queue
+make -C fire_stack
+make -C fire_doubly_linked_list
+make -C fire_narytree
+make -C fire_vector
+make -C arit_eval
+make -C fire_graph
+```
+
+---
+
+## ▶️ Run Examples
+
+```bash
+./fire_graph/bin/test_graph
+```
+
+---
+
+## 📚 Documentation
+
+Generate full documentation:
+
+```bash
+sudo dnf install doxygen graphviz
+doxygen Doxyfile
+xdg-open docs/html/index.html
+```
+
+Includes:
+
+- API documentation
+- internal implementation notes
+- module pages
+- real usage examples
+
+---
+
+## 🎯 Design Philosophy
+
+This project intentionally avoids:
+
+- STL-like abstractions
+- hidden allocations
+- magic behavior
+
+Instead, it focuses on:
+
+- explicit memory ownership
+- predictable behavior
+- debuggability
+- portability
+
+---
+
+## 🔐 Security Notes
+
+- No unchecked arithmetic (arit_eval uses safe operations)
+- Explicit frees in all modules
+- Bounded structures (graph limits, queue safety)
+- Defensive programming style
+- Audit resources with Valgrind(audit Heap for leaks) and cppchecker(SAST)
+
+---
+
+## 📌 Why this project exists
+
+This is not meant to be:
+
+❌ production-ready library  
+❌ optimized for performance  
+❌ generic framework  
+
+This **is**:
+
+✅ a study of fundamentals  
+✅ a reference for low-level C  
+✅ proof of hands-on systems knowledge  
+
+---
+
+## 🧑‍💻 Author
+
+**Orangewarrior**
+
+---
+
+## 🧠 Future Work
+
+- Dijkstra implementation
+- graph serialization
+- stress tests
+- optional lock-free structures
+
 
 ## Project tree
+Note, the path "src/main.c" its a complete example to use each module.
 ```
 Solitude_of_fire/
 ├── arit_eval
@@ -143,68 +301,6 @@ Solitude_of_fire/
 sudo dnf install doxygen graphviz
 doxygen Doxyfile
 xdg-open docs/html/index.html
-```
-
-## Build and run examples
-
-### fire_queue
-```bash
-make -C fire_queue
-./fire_queue/bin/test_queue
-```
-
-### fire_stack
-```bash
-make -C fire_stack
-./fire_stack/bin/test_stack
-```
-
-### fire_doubly_linked_list
-```bash
-make -C fire_doubly_linked_list
-./fire_doubly_linked_list/bin/test_doubly_linked
-```
-
-### fire_narytree
-```bash
-make -C fire_narytree
-./fire_narytree/bin/test_tree
-```
-
-### fire_vector
-```bash
-make -C fire_vector
-./fire_vector/bin_test/fire_vector_test
-```
-
-### arit_eval
-```bash
-make -C arit_eval
-./arit_eval/bin/arit_eval "10 + 20 * 3"
-```
-
-
-### fire_graph
-```bash
-make -C fire_graph
-./fire_graph/bin/test_graph
-```
-
-## fire_graph example
-
-The `fire_graph` example builds a weighted route network from **A** to **J** and
-uses **Bellman-Ford** to find the cheapest route. It includes a few
-negative-weight edges, but no negative cycle, to demonstrate a classic
-GPS-like shortest-path use case.
-
-
-## fire_graph example
-
-The graph example prints the exact weighted edge table, then runs Bellman-Ford and Floyd-Warshall to show the shortest route from `A` to `J`, including the sequence of edges used and a small benchmark between the two algorithms.
-
-```bash
-make -C fire_graph
-./fire_graph/bin/test_graph
 ```
 
 
