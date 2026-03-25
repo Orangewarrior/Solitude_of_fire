@@ -1,0 +1,5 @@
+/**
+ * @page fire_tree_page fire_narytree
+ *
+ * N-ary tree using child/sibling pointers. The example creates several nodes, searches by position, inserts children, removes descendants, and then destroys the tree.
+ */

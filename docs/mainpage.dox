@@ -1,0 +1,20 @@
+/**
+ * @mainpage Fortress of Solitude - Fire Edition
+ *
+ * @section intro Introduction
+ *
+ * This package keeps the original module-by-module example programs while
+ * refactoring the APIs for safer behavior and richer Doxygen documentation.
+ *
+ * @section pages Module Pages
+ * - @ref fire_queue_page
+ * - @ref fire_stack_page
+ * - @ref fire_dll_page
+ * - @ref fire_tree_page
+ * - @ref fire_vector_page
+ * - @ref arit_eval_page
+ * - @ref fire_graph_page
+ *
+ * @section author Author
+ * Orangewarrior
+ */

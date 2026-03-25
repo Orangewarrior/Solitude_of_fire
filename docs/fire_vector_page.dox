@@ -1,0 +1,5 @@
+/**
+ * @page fire_vector_page fire_vector
+ *
+ * Dynamic array of `void *`. The example adds strings, swaps/removes entries, sorts, and uses `bsearch`.
+ */

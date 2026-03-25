@@ -1,0 +1,29 @@
+lib/fire_stack.c:10:5: style: Variable 'd' can be declared as pointer to const [constVariablePointer]
+    FIRESTACK_DEBUG("memory allocation failure, size=%zu", size);
+    ^
+src/main.c:40:23: style: Parameter 'label' can be declared as pointer to const [constParameterPointer]
+void *form_data(char *label, int line)
+                      ^
+src/main.c:55:11: style: Variable 'in' can be declared as pointer to const [constVariablePointer]
+    data *in = (data *)argv;
+          ^
+lib/fire_stack.c:61:7: style: The function 'fire_stack_pop' is never used. [unusedFunction]
+void *fire_stack_pop(FireStack S, void (*lambda)(void *argvs))
+      ^
+lib/fire_stack.c:29:5: style: The function 'fire_stack_empty' should have static linkage since it is not used outside of its translation unit. [staticFunction]
+int fire_stack_empty(const FireStack S)
+    ^
+lib/fire_stack.c:80:6: style: The function 'fire_stack_clear' should have static linkage since it is not used outside of its translation unit. [staticFunction]
+void fire_stack_clear(FireStack S, void (*destroy)(void *))
+     ^
+src/main.c:40:7: style: The function 'form_data' should have static linkage since it is not used outside of its translation unit. [staticFunction]
+void *form_data(char *label, int line)
+      ^
+src/main.c:53:6: style: The function 'inter_data' should have static linkage since it is not used outside of its translation unit. [staticFunction]
+void inter_data(void *argv)
+     ^
+src/main.c:60:6: style: The function 'free_data' should have static linkage since it is not used outside of its translation unit. [staticFunction]
+void free_data(void *argv)
+     ^
+nofile:0:0: information: Active checkers: 119/975 (use --checkers-report=<filename> to see details) [checkersReport]
+

@@ -1,0 +1,5 @@
+/**
+ * @page fire_queue_page fire_queue
+ *
+ * FIFO queue storing opaque payload pointers. The example mirrors the original module style: allocate custom structs, enqueue them, traverse, then dequeue/free them safely.
+ */

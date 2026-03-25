@@ -1,0 +1,35 @@
+lib/fire_doubly_linked.c:18:5: style: Variable 'd' can be declared as pointer to const [constVariablePointer]
+    FIRE_DL_DEBUG("memory allocation failure, size=%zu", size);
+    ^
+lib/fire_doubly_linked.c:80:19: style: Variable 'temp' can be declared as pointer to const [constVariablePointer]
+    fire_dl_node *temp = Get_head_dl_position(in);
+                  ^
+lib/fire_doubly_linked.c:90:19: style: Variable 'temp' can be declared as pointer to const [constVariablePointer]
+    fire_dl_node *temp = Get_head_dl_position(in);
+                  ^
+src/main.c:39:23: style: Parameter 'label' can be declared as pointer to const [constParameterPointer]
+void *form_data(char *label, char *varname)
+                      ^
+src/main.c:39:36: style: Parameter 'varname' can be declared as pointer to const [constParameterPointer]
+void *form_data(char *label, char *varname)
+                                   ^
+src/main.c:56:11: style: Variable 'in' can be declared as pointer to const [constVariablePointer]
+    data *in = (data *)argv;
+          ^
+lib/fire_doubly_linked.c:8:6: style: The function 'fire_dl_xfree' is never used. [unusedFunction]
+void fire_dl_xfree(void **ptr)
+     ^
+lib/fire_doubly_linked.c:40:15: style: The function 'Get_head_dl_position' should have static linkage since it is not used outside of its translation unit. [staticFunction]
+fire_dl_node *Get_head_dl_position(fire_dl_node *in)
+              ^
+src/main.c:39:7: style: The function 'form_data' should have static linkage since it is not used outside of its translation unit. [staticFunction]
+void *form_data(char *label, char *varname)
+      ^
+src/main.c:54:6: style: The function 'inter_data' should have static linkage since it is not used outside of its translation unit. [staticFunction]
+void inter_data(void *argv)
+     ^
+src/main.c:61:6: style: The function 'inter_free' should have static linkage since it is not used outside of its translation unit. [staticFunction]
+void inter_free(void *argv)
+     ^
+nofile:0:0: information: Active checkers: 119/975 (use --checkers-report=<filename> to see details) [checkersReport]
+

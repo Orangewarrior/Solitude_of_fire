@@ -1,0 +1,5 @@
+/**
+ * @page arit_eval_page arit_eval
+ *
+ * Arithmetic parser/evaluator with explicit parser context and checked integer arithmetic. The example reads an expression from argv and prints the computed result.
+ */

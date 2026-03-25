@@ -1,0 +1,8 @@
+lib/fire_graph.c:226:9: style: The scope of the variable 'changed' can be reduced. [variableScope]
+    int changed;
+        ^
+lib/fire_graph.c:186:31: style: Variable 'cur' can be declared as pointer to const [constVariablePointer]
+        fire_graph_edge_node *cur = graph->adj[i];
+                              ^
+nofile:0:0: information: Active checkers: 119/975 (use --checkers-report=<filename> to see details) [checkersReport]
+

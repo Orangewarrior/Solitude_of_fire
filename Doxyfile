@@ -1,0 +1,59 @@
+PROJECT_NAME           = "Fortress of Solitude - Fire Edition"
+PROJECT_BRIEF          = "Security-focused and documented low-level C modules"
+OUTPUT_DIRECTORY       = docs
+OUTPUT_LANGUAGE        = English
+
+INPUT                  = README.md \
+                         docs/mainpage.dox \
+                         docs/fire_queue_page.dox \
+                         docs/fire_stack_page.dox \
+                         docs/fire_dll_page.dox \
+                         docs/fire_tree_page.dox \
+                         docs/fire_vector_page.dox \
+                         docs/arit_eval_page.dox \
+                         fire_queue/lib/fire_queue.h \
+                         fire_queue/lib/fire_queue.c \
+                         fire_queue/src/main.c \
+                         fire_stack/lib/fire_stack.h \
+                         fire_stack/lib/fire_stack.c \
+                         fire_stack/src/main.c \
+                         fire_doubly_linked_list/lib/fire_doubly_linked.h \
+                         fire_doubly_linked_list/lib/fire_doubly_linked.c \
+                         fire_doubly_linked_list/src/main.c \
+                         fire_narytree/lib/fire_narytree.h \
+                         fire_narytree/lib/fire_narytree.c \
+                         fire_narytree/src/main.c \
+                         fire_vector/lib/fire_vector.h \
+                         fire_vector/lib/fire_vector.c \
+                         fire_vector/lib/mem_ops.h \
+                         fire_vector/lib/mem_ops.c \
+                         fire_vector/src_test/main.c \
+                         arit_eval/src/arithmetic_eval.h \
+                         arit_eval/src/arithmetic_eval.c \
+                         arit_eval/src/parser.h \
+                         arit_eval/src/parser.c \
+                         arit_eval/src/AST.h \
+                         arit_eval/src/AST.c \
+                         arit_eval/src/secure_operation.h \
+                         arit_eval/src/secure_operation.c \
+                         arit_eval/src/main.c
+                         docs/fire_graph_page.dox \
+                         fire_graph/lib/fire_graph.h \
+                         fire_graph/lib/fire_graph.c \
+                         fire_graph/src/main.c \
+FILE_PATTERNS          = *.h *.c *.md *.dox
+RECURSIVE              = NO
+
+EXTRACT_ALL            = YES
+EXTRACT_PRIVATE        = YES
+EXTRACT_STATIC         = YES
+OPTIMIZE_OUTPUT_FOR_C  = YES
+TYPEDEF_HIDES_STRUCT   = YES
+
+GENERATE_HTML          = YES
+GENERATE_LATEX         = NO
+GENERATE_TREEVIEW      = YES
+FULL_PATH_NAMES        = NO
+WARNINGS               = YES
+WARN_IF_UNDOCUMENTED   = YES
+WARN_IF_DOC_ERROR      = YES

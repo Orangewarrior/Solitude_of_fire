@@ -1,0 +1,5 @@
+/**
+ * @page fire_dll_page fire_doubly_linked_list
+ *
+ * Doubly linked list with `position` tags. The example inserts records, traverses in both directions, deletes one node, then frees the list.
+ */

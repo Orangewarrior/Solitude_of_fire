@@ -1,0 +1,14 @@
+==16862== Memcheck, a memory error detector
+==16862== Copyright (C) 2002-2024, and GNU GPL'd, by Julian Seward et al.
+==16862== Using Valgrind-3.26.0 and LibVEX; rerun with -h for copyright info
+==16862== Command: ./bin_test/fire_vector_test
+==16862== 
+==16862== 
+==16862== HEAP SUMMARY:
+==16862==     in use at exit: 0 bytes in 0 blocks
+==16862==   total heap usage: 5 allocs, 5 frees, 1,144 bytes allocated
+==16862== 
+==16862== All heap blocks were freed -- no leaks are possible
+==16862== 
+==16862== For lists of detected and suppressed errors, rerun with: -s
+==16862== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

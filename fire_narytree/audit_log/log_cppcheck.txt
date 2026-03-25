@@ -1,0 +1,38 @@
+lib/fire_narytree.c:18:5: style: Variable 'd' can be declared as pointer to const [constVariablePointer]
+    FIRETREE_DEBUG("memory allocation failure, size=%zu", size);
+    ^
+lib/fire_narytree.c:83:9: style: Variable 'd' can be declared as pointer to const [constVariablePointer]
+        FIRETREE_DEBUG("Node Value : %d", root->position);
+        ^
+src/main.c:44:35: style: Parameter 'label' can be declared as pointer to const [constParameterPointer]
+void *form_data(bool taint, char *label, char *exp, char *varname, int line)
+                                  ^
+src/main.c:44:48: style: Parameter 'exp' can be declared as pointer to const [constParameterPointer]
+void *form_data(bool taint, char *label, char *exp, char *varname, int line)
+                                               ^
+src/main.c:44:59: style: Parameter 'varname' can be declared as pointer to const [constParameterPointer]
+void *form_data(bool taint, char *label, char *exp, char *varname, int line)
+                                                          ^
+src/main.c:65:11: style: Variable 'in' can be declared as pointer to const [constVariablePointer]
+    data *in = (data *)argv;
+          ^
+src/main.c:86:21: style: Variable 'ret' can be declared as pointer to const [constVariablePointer]
+    fire_tree_node *ret = NULL;
+                    ^
+lib/fire_narytree.c:8:6: style: The function 'firetree_xfree' is never used. [unusedFunction]
+void firetree_xfree(void **ptr)
+     ^
+lib/fire_narytree.c:65:17: style: The function 'insert_sibling_before' is never used. [unusedFunction]
+fire_tree_node *insert_sibling_before(fire_tree_node *root, int position, int new_position, void *data)
+                ^
+src/main.c:44:7: style: The function 'form_data' should have static linkage since it is not used outside of its translation unit. [staticFunction]
+void *form_data(bool taint, char *label, char *exp, char *varname, int line)
+      ^
+src/main.c:63:6: style: The function 'inter_data' should have static linkage since it is not used outside of its translation unit. [staticFunction]
+void inter_data(void *argv)
+     ^
+src/main.c:72:6: style: The function 'inter_free_treeleafs' should have static linkage since it is not used outside of its translation unit. [staticFunction]
+void inter_free_treeleafs(void *argv)
+     ^
+nofile:0:0: information: Active checkers: 119/975 (use --checkers-report=<filename> to see details) [checkersReport]
+

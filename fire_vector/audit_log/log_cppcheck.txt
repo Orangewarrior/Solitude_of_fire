@@ -1,0 +1,29 @@
+src_test/main.c:14:11: style: Variable 'find' can be declared as pointer to const [constVariablePointer]
+    char *find = "avenger";
+          ^
+lib/fire_vector.c:81:6: style: The function 'fire_vector_pop' is never used. [unusedFunction]
+void fire_vector_pop(fire_vector *v)
+     ^
+lib/fire_vector.c:97:5: style: The function 'fire_cmp_int' is never used. [unusedFunction]
+int fire_cmp_int(const void *a, const void *b)
+    ^
+lib/fire_vector.c:106:5: style: The function 'fire_cmp_double' is never used. [unusedFunction]
+int fire_cmp_double(const void *a, const void *b)
+    ^
+lib/fire_vector.c:115:5: style: The function 'fire_cmp_float' is never used. [unusedFunction]
+int fire_cmp_float(const void *a, const void *b)
+    ^
+lib/mem_ops.c:15:7: style: The function 'fire_xmalloc' is never used. [unusedFunction]
+void *fire_xmalloc(size_t size) { return malloc(size); }
+      ^
+lib/mem_ops.c:16:7: style: The function 'fire_xcalloc' is never used. [unusedFunction]
+void *fire_xcalloc(size_t mem, size_t size) { return calloc(mem, size); }
+      ^
+lib/mem_ops.c:17:7: style: The function 'fire_xrealloc' is never used. [unusedFunction]
+void *fire_xrealloc(void *ptr, size_t size) { return realloc(ptr, size); }
+      ^
+lib/fire_vector.c:20:5: style: The function 'fire_vector_resize' should have static linkage since it is not used outside of its translation unit. [staticFunction]
+int fire_vector_resize(fire_vector *v, int limit)
+    ^
+nofile:0:0: information: Active checkers: 119/975 (use --checkers-report=<filename> to see details) [checkersReport]
+

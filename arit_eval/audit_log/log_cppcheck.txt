@@ -1,0 +1,8 @@
+src/arithmetic_eval.c:31:21: style: Parameter 'in' can be declared as pointer to const [constParameterPointer]
+int arit_eval(char *in)
+                    ^
+src/arithmetic_eval.c:31:5: style: The function 'arit_eval' is never used. [unusedFunction]
+int arit_eval(char *in)
+    ^
+nofile:0:0: information: Active checkers: 119/975 (use --checkers-report=<filename> to see details) [checkersReport]
+

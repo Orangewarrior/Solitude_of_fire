@@ -1,0 +1,5 @@
+/**
+ * @page fire_stack_page fire_stack
+ *
+ * LIFO stack storing opaque payload pointers. The example pushes heap-allocated custom structs and then pops/frees them.
+ */

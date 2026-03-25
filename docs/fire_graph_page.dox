@@ -1,0 +1,23 @@
+/**
+ * @page fire_graph_page fire_graph
+ *
+ * @section fg_overview Overview
+ *
+ * `fire_graph` provides a weighted directed graph with explicit maximum limits,
+ * Bellman-Ford for single-source shortest paths, and Floyd-Warshall for all-pairs
+ * shortest paths.
+ *
+ * @section fg_security Security and robustness notes
+ *
+ * - vertices and edges are bounded by caller-supplied limits
+ * - labels are copied dynamically
+ * - Bellman-Ford detects reachable negative cycles
+ * - Floyd-Warshall detects negative cycles via diagonal checks
+ * - path reconstruction is explicit and returns error codes for unreachable nodes
+ *
+ * @section fg_example Example behavior
+ *
+ * The module example builds a GPS-like weighted route graph from `A` to `J`,
+ * prints every edge and weight for reproducibility, runs both Bellman-Ford and
+ * Floyd-Warshall, reconstructs the shortest route, and benchmarks both algorithms.
+ */

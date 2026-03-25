@@ -1,0 +1,64 @@
+Adjacency representation:
+A: -> J(50) -> C(7) -> B(6)
+B: -> E(-4) -> D(5) -> C(8)
+C: -> I(20) -> F(9) -> D(-3)
+D: -> G(4) -> E(7) -> B(-2)
+E: -> J(15) -> H(3)
+F: -> G(2)
+G: -> H(2)
+H: -> I(2)
+I: -> J(2)
+J:
+
+Exact route table for reproduction/debug:
+Edges (from -> to : weight)
+  A -> B : 6
+  A -> C : 7
+  A -> J : 50
+  B -> C : 8
+  B -> D : 5
+  B -> E : -4
+  C -> D : -3
+  C -> F : 9
+  C -> I : 20
+  D -> B : -2
+  D -> E : 7
+  D -> G : 4
+  E -> H : 3
+  E -> J : 15
+  F -> G : 2
+  G -> H : 2
+  H -> I : 2
+  I -> J : 2
+
+Bellman-Ford shortest route from A to J
+Cost: 5
+Path: A -> C -> D -> B -> E -> H -> I -> J
+Edges used by Bellman-Ford:
+  A -> C : 7
+  C -> D : -3
+  D -> B : -2
+  B -> E : -4
+  E -> H : 3
+  H -> I : 2
+  I -> J : 2
+  total cost = 5
+
+Floyd-Warshall shortest route from A to J
+Cost: 5
+Path: A -> C -> D -> B -> E -> H -> I -> J
+Edges used by Floyd-Warshall:
+  A -> C : 7
+  C -> D : -3
+  D -> B : -2
+  B -> E : -4
+  E -> H : 3
+  H -> I : 2
+  I -> J : 2
+  total cost = 5
+
+Benchmark (5000 rounds)
+Bellman-Ford total:   16.487 ms
+Bellman-Ford average: 3.297 us
+Floyd-Warshall total: 69.198 ms
+Floyd-Warshall avg:   13.840 us

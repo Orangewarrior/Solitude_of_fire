@@ -1,0 +1,29 @@
+lib/fire_queue.c:10:5: style: Variable 'd' can be declared as pointer to const [constVariablePointer]
+    FIRE_QUEUE_DEBUG("memory allocation failure, size=%zu", size);
+    ^
+src/main.c:46:23: style: Parameter 'label' can be declared as pointer to const [constParameterPointer]
+void *form_data(char *label, int line)
+                      ^
+src/main.c:61:11: style: Variable 'in' can be declared as pointer to const [constVariablePointer]
+    data *in = (data *)argv;
+          ^
+lib/fire_queue.c:73:6: style: The function 'fire_dequeue' is never used. [unusedFunction]
+void fire_dequeue(Fire_Queue Q, void (*lambda)(void *argvs))
+     ^
+lib/fire_queue.c:32:5: style: The function 'fire_queue_empty' should have static linkage since it is not used outside of its translation unit. [staticFunction]
+int fire_queue_empty(const Fire_Queue Q)
+    ^
+lib/fire_queue.c:91:6: style: The function 'fire_queue_clear' should have static linkage since it is not used outside of its translation unit. [staticFunction]
+void fire_queue_clear(Fire_Queue Q, void (*destroy)(void *))
+     ^
+src/main.c:46:7: style: The function 'form_data' should have static linkage since it is not used outside of its translation unit. [staticFunction]
+void *form_data(char *label, int line)
+      ^
+src/main.c:59:6: style: The function 'inter_data' should have static linkage since it is not used outside of its translation unit. [staticFunction]
+void inter_data(void *argv)
+     ^
+src/main.c:66:6: style: The function 'free_data' should have static linkage since it is not used outside of its translation unit. [staticFunction]
+void free_data(void *argv)
+     ^
+nofile:0:0: information: Active checkers: 119/975 (use --checkers-report=<filename> to see details) [checkersReport]
+
