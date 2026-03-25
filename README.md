@@ -178,7 +178,7 @@ This **is**:
 - optional lock-free structures
 
 
-## Project tree
+## 📦 Project Structure
 Note, the path "src/main.c" its a complete example to use each module.
 ```
 Solitude_of_fire/
